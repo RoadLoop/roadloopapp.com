@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoadLoop — Account & Data Deletion</title>
+    <meta name="description" content="How to request deletion of your RoadLoop account and associated data." />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: #e2e8f0;
+        --card: #f8fafc;
+        --link: #2563eb;
+        --max: 860px;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+      }
+      header {
+        border-bottom: 1px solid var(--border);
+        background: #fff;
+      }
+      .wrap { max-width: var(--max); margin: 0 auto; padding: 24px 16px; }
+      .brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .brand h1 { font-size: 18px; margin: 0; letter-spacing: 0.2px; }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 14px;
+        font-size: 14px;
+      }
+      nav a:hover { color: var(--text); }
+      main { padding: 28px 0 48px; }
+      h2 { font-size: 28px; margin: 0 0 8px; }
+      p.lead { margin: 0 0 18px; color: var(--muted); }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px;
+        margin: 16px 0;
+      }
+      h3 { margin: 0 0 10px; font-size: 18px; }
+      ol, ul { margin: 10px 0 0 18px; }
+      li { margin: 6px 0; }
+      a { color: var(--link); }
+      .note { color: var(--muted); font-size: 14px; }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 18px 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      code {
+        background: #eef2ff;
+        border: 1px solid #e0e7ff;
+        padding: 2px 6px;
+        border-radius: 8px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap brand">
+        <h1>RoadLoop</h1>
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h2>Account & Data Deletion</h2>
+      <p class="lead">
+        You can request deletion of your RoadLoop account and associated data at any time.
+      </p>
+
+      <div class="card">
+        <h3>Option 1: In the app</h3>
+        <ol>
+          <li>Open the RoadLoop app</li>
+          <li>Go to <strong>Settings → Account → Request account deletion</strong></li>
+          <li>Follow the on-screen instructions</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Option 2: By email</h3>
+        <p>
+          If you no longer have access to the app, email us at
+          <a href="mailto:roadloop_help@outlook.com">roadloop_help@outlook.com</a>
+          from the email address associated with your RoadLoop account.
+        </p>
+        <ul>
+          <li>Subject: <code>Account Deletion Request</code></li>
+          <li>Include: the email address associated with your account</li>
+        </ul>
+        <p class="note">
+          We may ask for additional information to verify ownership of the account before completing deletion.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>What data is deleted</h3>
+        <p>When an account deletion request is completed, we delete:</p>
+        <ul>
+          <li>Account details (e.g. email address, user ID)</li>
+          <li>Trips and journeys data</li>
+          <li>Vehicles, segments and related activity data</li>
+          <li>App usage data associated with the account</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Retention</h3>
+        <p>
+          We aim to complete account deletion within <strong>30 days</strong> of the request.
+        </p>
+        <p class="note">
+          Some anonymised or aggregated data may be retained for analytics purposes where it cannot be linked back to an
+          individual user.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        © <span id="y"></span> RoadLoop · Support:
+        <a href="mailto:roadloop_help@outlook.com">roadloop_help@outlook.com</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
