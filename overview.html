@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RoadLoop — Overview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="badge">RL</div>
+        <div>RoadLoop</div>
+      </div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+
+    <div class="article">
+      <h1>What is RoadLoop?</h1>
+      <p>
+        RoadLoop is a driver-centric platform built around three pillars:
+        <strong>Driver analytics</strong>, <strong>Vehicle profiles</strong>, and <strong>Segments</strong>.
+        The goal is to make driving more informed, more organised, and more fun — while staying privacy-first.
+      </p>
+
+      <h2>1) Driver Profile & Mileage Analytics</h2>
+      <p>
+        RoadLoop automatically detects journeys and builds an understanding of your mileage and driving patterns.
+        Each trip can be tagged with a confidence score, and you can delete trips you don’t want to keep.
+      </p>
+
+      <h2>2) Vehicle Profiles</h2>
+      <p>
+        Add your vehicles and keep them organised: odometer tracking, service history, and reminders for things like
+        MOT/tax/insurance. The aim is to reduce admin and make “ownership hygiene” effortless.
+      </p>
+
+      <h2>3) Segments</h2>
+      <p>
+        Segments are the social/competitive layer: curated stretches of road you can compare performance on.
+        We’re cautious with social features — we focus on visibility through segments and achievements rather than
+        publishing full journeys.
+      </p>
+
+      <h2>Subscriptions</h2>
+      <p>
+        RoadLoop offers tiers that control segment usage and premium dashboards. Some dashboards and analytics
+        are behind a paywall, and early “VIP” access may be offered for the first cohort of users.
+      </p>
+
+      <div class="footer">
+        <a class="pill" href="index.html">← Back to Home</a>
+        <span class="small">Last updated: <span id="d"></span></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('d').textContent = new Date().toLocaleDateString('en-GB');
+  </script>
+</body>
+</html>

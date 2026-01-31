@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>RoadLoop</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <h1>RoadLoop</h1>
-    <p>Website coming soon.</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>RoadLoop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="RoadLoop turns everyday driving into smart insights and friendly competition." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="badge">RL</div>
+        <div>RoadLoop</div>
+      </div>
+      <div class="navlinks">
+        <a href="overview.html">Overview</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1>RoadLoop</h1>
+      <p>
+        A driver-centric platform that helps you understand your mileage, keep your vehicle on track,
+        and add a competitive layer through segments — without needing to share your full journeys.
+      </p>
+      <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="button" href="overview.html">What RoadLoop is</a>
+        <span class="pill small">UK • iOS first • Android coming</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Driver Profile & Mileage Analytics</h3>
+        <p>Track your driving habits, mileage and trends — with confidence scoring and the ability to delete trips.</p>
+      </div>
+      <div class="card">
+        <h3>Vehicle Profiles</h3>
+        <p>Manage odometer, service history and reminders like MOT/tax/insurance — built for real ownership.</p>
+      </div>
+      <div class="card">
+        <h3>Segments</h3>
+        <p>Compete socially through curated segments and achievements — not by broadcasting every drive.</p>
+      </div>
+      <div class="card">
+        <h3>Privacy-first by design</h3>
+        <p>We avoid unnecessary sharing. You control visibility via segments and achievements, not raw location trails.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="pill">Contact: <span style="font-family:var(--mono);">support@roadloopapp.com</span></div>
+      <div class="small">© <span id="y"></span> RoadLoop</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
